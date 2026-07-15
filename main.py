@@ -115,5 +115,5 @@ async def get_artist_tracks(artist_id: str):
 
 if __name__ == "__main__":
     import uvicorn
-    # Запуск сервера uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    # ИСПРАВЛЕНО: Передаем строку "main:app" вместо объекта
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
