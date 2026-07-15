@@ -38,31 +38,13 @@ class ArtistResponse(BaseModel):
 DB_TRACKS = [
     {
         "id": 1,
-        "title": "Cyber Evolution Protocol",
-        "artist_name": "LEEKSEEK Engine",
+        "title": "Название вашей песни 1",
+        "artist_name": "Имя Исполнителя",
         "artist_id": "art_1",
-        "audio_url": "https://soundhelix.com",
-        # ИСПРАВЛЕНО: Прямая ссылка на Unsplash CDN (Работает в РФ стабильно)
-        "cover_url": "https://unsplash.com",
+        # ВСТАВЬТЕ СЮДА СВОЮ СКОПИРОВАННУЮ ССЫЛКУ ИЗ SUPABASE:
+        "audio_url": "https://uzjfvzkdvqpxzmfjueby.supabase.co/storage/v1/object/public/songs/1.mp3",
+        "cover_url": "https://userapi.com",
         "play_count": 1250000,
-    },
-    {
-        "id": 2,
-        "title": "Quantum Shaders",
-        "artist_name": "LEEKSEEK Engine",
-        "artist_id": "art_1",
-        "audio_url": "https://soundhelix.com",
-        "cover_url": "https://unsplash.com",
-        "play_count": 980000,
-    },
-    {
-        "id": 3,
-        "title": "Neon Impulse",
-        "artist_name": "Sora Neon",
-        "artist_id": "art_2",
-        "audio_url": "https://soundhelix.com",
-        "cover_url": "https://unsplash.com",
-        "play_count": 2300000,
     }
 ]
 
