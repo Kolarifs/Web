@@ -33,6 +33,8 @@ class ArtistResponse(BaseModel):
     monthly_listeners: int
 
 # База данных в оперативной памяти сервера (Mock DB слой)
+# Полностью заменяем массивы данных внутри вашего файла main.py на GitHub:
+
 DB_TRACKS = [
     {
         "id": 1,
@@ -40,7 +42,8 @@ DB_TRACKS = [
         "artist_name": "LEEKSEEK Engine",
         "artist_id": "art_1",
         "audio_url": "https://soundhelix.com",
-        "cover_url": "https://picsum.photos",
+        # ИСПРАВЛЕНО: Прямая ссылка на Unsplash CDN (Работает в РФ стабильно)
+        "cover_url": "https://unsplash.com",
         "play_count": 1250000,
     },
     {
@@ -49,7 +52,7 @@ DB_TRACKS = [
         "artist_name": "LEEKSEEK Engine",
         "artist_id": "art_1",
         "audio_url": "https://soundhelix.com",
-        "cover_url": "https://picsum.photos",
+        "cover_url": "https://unsplash.com",
         "play_count": 980000,
     },
     {
@@ -58,7 +61,7 @@ DB_TRACKS = [
         "artist_name": "Sora Neon",
         "artist_id": "art_2",
         "audio_url": "https://soundhelix.com",
-        "cover_url": "https://picsum.photos",
+        "cover_url": "https://unsplash.com",
         "play_count": 2300000,
     }
 ]
@@ -67,14 +70,15 @@ DB_ARTISTS = {
     "art_1": {
         "id": "art_1",
         "name": "LEEKSEEK Engine",
-        "avatar_url": "https://picsum.photos",
+        # ИСПРАВЛЕНО: Рабочие аватары
+        "avatar_url": "https://unsplash.com",
         "bio": "Разработчик низкоуровневых звуковых алгоритмов в среде LEEK_OS.",
         "monthly_listeners": 450000,
     },
     "art_2": {
         "id": "art_2",
         "name": "Sora Neon",
-        "avatar_url": "https://picsum.photos",
+        "avatar_url": "https://unsplash.com",
         "bio": "Синтвейв-исполнитель, работающий с аппаратными текстурами звука.",
         "monthly_listeners": 890000,
     }
